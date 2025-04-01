@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hans | Full Stack Developer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portafolio de Hans, desarrollador Full Stack especializado en Java, Spring Boot.">
+    <meta name="keywords" content="desarrollador web, full stack, java, spring boot, portfolio">
+    <meta name="author" content="Hans Jaque">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Hans | Full Stack Developer">
+    <meta property="og:description" content="Portafolio de Hans, desarrollador Full Stack especializado en Java, Spring Boot, React y tecnologías web modernas.">
+    <meta property="og:image" content="https://dominio/images/hans.jpeg">
+    <meta property="og:url" content="https://dominio">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hans | Full Stack Developer">
+    <meta name="twitter:description" content="Portafolio de Hans, desarrollador Full Stack especializado en Java.">
+    <meta name="twitter:image" content="https://dominio/images/hans.jpeg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon/programming.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/favicon/programming.png">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/contact.css">
+    
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Theme Color for Browser UI -->
+    <meta name="theme-color" content="#4a00e0">
+</head>
+<body>
+    <div class="background-container"></div>
+    
+    <header id="header">
+        <nav>
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="language-switch">
+                <button id="languageToggle" class="language-btn">
+                    <span class="lang-text">ES</span>
+                    <span class="lang-icon"><i class="fas fa-globe"></i></span>
+                </button>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <div class="container">
+            <h1 class="title">Hola, soy <span class="highlight">Hans</span></h1>
+            <h2 class="subtitle">Full Stack developer</h2>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hola, soy un desarrollador fullstack Java con experiencia en la creación de aplicaciones web y backend escalables. Me encanta trabajar con Java y Spring Boot.</p>
+                    <p>También tengo experiencia con bases de datos SQL y NoSQL, integración de API y despliegue en la nube con AWS, GCP o Azure.</p>
+                    <p>Siempre estoy aprendiendo nuevas tecnologías y buscando formas de mejorar mis habilidades.</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="images/hans.jpeg" alt="Hans - Desarrollador Web" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projectos</h2>
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    <span class="project-featured">Destacado</span>
+                    <div class="project-image">
+                        <img src="images/Proyecto1.jpg" alt="Red social">
+                    </div>
+                    <div class="project-info">
+                        <h3>Red social(v1)</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <p>Red social desarrollada con tecnologías modernas que permite a los usuarios conectarse, compartir contenido y comunicarse en tiempo real.</p>
+                        <div class="project-links">
+                            
+                            <a href="https://github.com/hansJaque/Social-network" class="project-link" target="_blank">Ver Código</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 2 -->
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Mis Habilidades</h2>
+            <div class="skills-container">
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-name">HTML5</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">CSS3</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">React</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Angular</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend -->
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-name">Java</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">C#</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Spring Boot</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">JPA/Hibernate</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">RESTful APIs</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bases de Datos -->
+                <div class="skill-category">
+                    <h3>Bases de Datos</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-name">MySQL</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">PostgreSQL</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">MongoDB</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Oracle</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- DevOps & Herramientas -->
+                <div class="skill-category">
+                    <h3>DevOps & Herramientas</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-name">Git</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Docker</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Maven/Gradle</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">AWS</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            
+            <div class="contact-content">
+                <!-- Información de contacto -->
+                <div class="contact-info">
+                    <p>¿Interesado en trabajar juntos? ¡Contáctame!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="contact-icon fas fa-envelope"></i>
+                            <span>dantejaque@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="contact-icon fas fa-phone"></i>
+                            <span>+1 7869436794</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="contact-icon fas fa-map-marker-alt"></i>
+                            <span>Washington, United States</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+                
+                <!-- Formulario de contacto -->
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hans Jaque. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/skills.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/language.js"></script>
+</body>
+</html>

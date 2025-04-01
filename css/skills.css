@@ -1,0 +1,123 @@
+#skills {
+    background: transparent;
+    position: relative;
+    padding: 80px 0;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.skill-category {
+    background: rgba(25, 25, 35, 0.85);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.skill-category h3 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+}
+
+.skill-category h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--primary-color);
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-item {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.skill-bar {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 10px;
+    width: 0;
+    position: relative;
+}
+
+.skill-percentage {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Colores específicos para cada categoría */
+.skill-category:nth-child(1) .skill-progress {
+    background: linear-gradient(90deg, #6c63ff, #8e85ff);
+}
+
+.skill-category:nth-child(2) .skill-progress {
+    background: linear-gradient(90deg, #ff6b6b, #ff8e8e);
+}
+
+.skill-category:nth-child(3) .skill-progress {
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+}
+
+.skill-category:nth-child(4) .skill-progress {
+    background: linear-gradient(90deg, #43e97b, #38f9d7);
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .skill-category {
+        padding: 20px;
+    }
+    
+    .skill-category h3 {
+        font-size: 1.5rem;
+    }
+}
